@@ -19,8 +19,8 @@ The quickest way to get started on a new docsify site is by using the template p
       <title></title>
 
       <!-- Themes (light + dark) -->
-      <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/css/theme-simple-dark.css">
-      <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/css/theme-simple.css">
+      <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/css/theme-simple-dark.css">
+      <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/css/theme-simple.css">
 
       <!-- Custom Styles -->
       <style>
@@ -41,7 +41,7 @@ The quickest way to get started on a new docsify site is by using the template p
 
       <!-- Required -->
       <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/js/mint-editor.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/js/mint-editor.min.js"></script>
 
       <!-- Recommended -->
       <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
@@ -70,15 +70,15 @@ Existing site owners may prefer to modify their existing `index.html` file using
 
    ```html
    <!-- Theme: Simple -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/css/theme-simple.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/css/theme-simple.css">
    ```
 
    For automatic light/dark mode support based on the user's operating system preference, specify a light and dark theme with appropriate `media` attribute:
 
    ```html
    <!-- Theme: Simple (light + dark) -->
-   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/css/theme-simple.css">
-   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/css/theme-simple-dark.css">
+   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/css/theme-simple.css">
+   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/css/theme-simple-dark.css">
    ```
 
 1. Add the mint-editor plugin after docsify.js:
@@ -88,7 +88,7 @@ Existing site owners may prefer to modify their existing `index.html` file using
    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 
    <!-- mint-editor -->
-   <script src="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/js/mint-editor.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/js/mint-editor.min.js"></script>
    ```
 
 1. Review the [Customization](customization) section and set theme properties as needed. For example:

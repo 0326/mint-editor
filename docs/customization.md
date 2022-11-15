@@ -8,7 +8,7 @@ To customize a *mint-editor* [theme](themes):
 
    ```html
    <!-- Theme -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/css/theme-simple.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/css/theme-simple.css">
 
    <!-- Custom theme styles -->
    <style>
@@ -20,7 +20,7 @@ To customize a *mint-editor* [theme](themes):
 
    ```html
    <!-- Theme -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/css/theme-simple.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/css/theme-simple.css">
 
    <!-- Custom theme stylesheet -->
    <link rel="stylesheet" href="theme-custom.css">
@@ -129,7 +129,7 @@ To use a PrismJS theme, add a `<link>` to your `index.html` after your site them
 
 ```html
 <!-- Site theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mint-editor@0/dist/css/theme-defaults.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/0326/mint-editor/dist/css/theme-defaults.min.css">
 
 <!-- PrismJS theme -->
 <link rel="stylesheet" href="path/to/prismjs-theme.css">
