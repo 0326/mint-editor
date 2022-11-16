@@ -20,7 +20,7 @@
   --mono-shade3: hsl(var(--mono-hue), var(--mono-saturation), 13%);
   --mono-shade2: hsl(var(--mono-hue), var(--mono-saturation), 15%);
   --mono-shade1: hsl(var(--mono-hue), var(--mono-saturation), 17%);
-  --mono-base: hsl(var(--mono-hue), var(--mono-saturation), 19%);
+  --mono-base: #264960; // hsl(var(--mono-hue), var(--mono-saturation), 19%);
   --mono-tint1: hsl(var(--mono-hue), var(--mono-saturation), 25%);
   --mono-tint2: hsl(var(--mono-hue), var(--mono-saturation), 35%);
   --mono-tint3: hsl(var(--mono-hue), var(--mono-saturation), 43%);
@@ -38,7 +38,7 @@
   --hr-border: 1px solid var(--mono-tint2);
 
   // Mark
-  --mark-background: #ffcb6b;
+  --mark-background: #fff;
   --mark-color: var(--base-background-color);
 
   // Selection
@@ -84,7 +84,7 @@
   --cover-blockquote-color: var(--mark-background);
 
   // Buttons
-  --cover-button-border: 1px solid var(--mono-tint3);
+  --cover-button-border: 1px solid rgb(113, 175, 133);
   --cover-button-color: #fff;
 
 
@@ -143,4 +143,11 @@
   --sidebar-nav-pagelink-background--loaded:
     no-repeat 0px center / 5px 6px linear-gradient(225deg, transparent 2.75px, var(--mono-tint2) 2.75px 4.25px, transparent 4.25px),
     no-repeat 5px center / 5px 6px linear-gradient(135deg, transparent 2.75px, var(--mono-tint2) 2.75px 4.25px, transparent 4.25px);
+}
+
+#mint-editor {
+  height: 6em;
+  text-indent: -999999em;
+  background: url(/assets/img/logo-large-white.svg) center no-repeat;
+  background-size: cover;
 }

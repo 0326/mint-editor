@@ -27,7 +27,7 @@
   --cover-border-width: ;
 
   /* Buttons */
-  --cover-button-background: ;
+  --cover-button-background: transparent;
   --cover-button-background--hover: ;
   --cover-button-border: 1px solid var(--theme-color);
   --cover-button-border--hover: ;
