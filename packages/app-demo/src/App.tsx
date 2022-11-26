@@ -1,39 +1,34 @@
 import React from 'react';
 import ReactLogo from './ReactLogo.svg';
-import YarnCat from './YarnCat.svg';
+import MintEditorLogo from './MintEditorLogo.svg';
 import './App.css';
 
-import { CompOne, CompTwo } from '@mint-editor/components';
+import { EditBox, Toolbar } from '@mint-editor/components';
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
         <div>
-          <img src={ReactLogo} className="React-logo" alt="React Logo" />
-          <img src={YarnCat} className="Yarn-cat" alt="Yarn Workspaces Cat" />
+          <img src={MintEditorLogo} className="mint-editor-logo" alt="MintEditor Logo" />
+          <img src={ReactLogo} className="react-logo" alt="React Logo" />
         </div>
         <h1>
           <a
             className="App-link"
-            href="https://github.com/0326/cra-workspaces-playground"
+            href="https://github.com/0326/mint-editor"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <strong>React</strong> Workspaces <sup>(TypeScript)</sup>
+            <strong>MintEditor with React</strong>
           </a>
         </h1>
-        <h2>Hot Reload Your React TypeScript Workspaces</h2>
-        <p className="body">
-          <code className="file">packages/apps/app-typescript/src/App.tsx</code>
-          <code className="file">packages/components/src/CompOne/CompOne.tsx</code>
-          <code className="file">packages/components/src/CompTwo/CompTwo.tsx</code>
-        </p>
-        <div className="components">
-          <CompOne />
-          <CompTwo />
-        </div>
       </header>
+      <div className="App-body">
+        <Toolbar />
+        <EditBox />
+        <div className="submit-button">发 送</div>
+      </div>
     </div>
   );
 };

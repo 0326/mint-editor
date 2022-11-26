@@ -1,85 +1,84 @@
 .App {
-  text-align: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  font-size: 14px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  padding: 10vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
 }
 
 .App-link {
   font-size: calc(30px + 2vmin);
-  color: #2f90bc;
+  color: #96cdcc;
   font-weight: 100;
 }
 
 .App-link:hover,
 .App-link:focus {
-  color: #00afff;
+  color: #a6d6d5;
 }
 
-.App-link strong {
-  font-weight: 400;
+.react-logo {
+  animation: react-logo-spin infinite 20s linear;
+  height: 20vmin;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  margin-bottom: 0;
-  padding: 0;
-  font-size: calc(10px + 2vmin);
-  font-weight: 200;
-}
-
-.file {
-  font-size: calc(6px + 1vmin);
-  color: #faa;
-  display: block;
-}
-
-.components div {
-  margin: 1vmin;
-  float: left;
-}
-
-.React-logo {
-  animation: React-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.Yarn-cat {
-  animation: Yarn-cat-move infinite 2s ease;
-  height: 40vmin;
+.mint-editor-logo {
   position: relative;
-  margin-left: -20vmin;
-  margin-top: 7.5vmin;
+  animation: mint-editor-logo-move infinite 2s ease;
+  height: 20vmin;
+  z-index: 1;
 }
 
-@keyframes React-logo-spin {
+.App-body {
+  width: 600px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.submit-button {
+  float: right;
+  border-radius: 10px;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 5px;
+  text-align: center;
+  color: #fff;
+  background: #71af85;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  opacity: .9;
+}
+
+@keyframes react-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-@keyframes Yarn-cat-move {
+@keyframes mint-editor-logo-move {
   0% {
     transform: translateX(0%);
   }
+
   50% {
     transform: translateX(20%);
   }
+
   100% {
     transform: translateX(0%);
   }

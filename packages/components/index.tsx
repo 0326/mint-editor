@@ -1,2 +1,2 @@
-export { default as CompOne } from './src/CompOne';
-export { default as CompTwo } from './src/CompTwo';
+export * from './src/EditBox';
+export * from './src/Toolbar';

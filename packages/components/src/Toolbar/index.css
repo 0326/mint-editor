@@ -1,0 +1,81 @@
+.mint-editor-toolbar-container {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 2px 1px;
+  margin-bottom: 4px;
+  background: #fff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.mint-editor-toolbar-icon {
+  font-family: "mint-editor-toolbar-icon" !important;
+  font-size: 28px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+
+  margin: 0 2px;
+  border-radius: 8px;
+}
+
+.mint-editor-toolbar-icon:hover {
+  background: #eee;
+}
+
+.mint-editor-toolbar-icon.active {
+  /* background: #5da62d; */
+  color: #5da62d;
+}
+
+.mint-editor-toolbar-icon.disabled {
+  /* background: #bbb; */
+  color: #bbb;
+  cursor: text;
+}
+
+/* https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=3770674 */
+@font-face {
+  font-family: "mint-editor-toolbar-icon";
+  /* Project id 3770674 */
+  src: url('//at.alicdn.com/t/c/font_3770674_hnfj8tghr7o.woff2?t=1669464764987') format('woff2'),
+    url('//at.alicdn.com/t/c/font_3770674_hnfj8tghr7o.woff?t=1669464764987') format('woff'),
+    url('//at.alicdn.com/t/c/font_3770674_hnfj8tghr7o.ttf?t=1669464764987') format('truetype');
+}
+
+.icon-bold:before {
+  content: "\e681";
+}
+
+.icon-italic:before {
+  content: "\e682";
+}
+
+.icon-underline:before {
+  content: "\e683";
+}
+
+.icon-strikethrough:before {
+  content: "\eaf0";
+}
+
+.icon-link:before {
+  content: "\e687";
+}
+
+.icon-undo:before {
+  content: "\e69b";
+}
+
+.icon-redo:before {
+  content: "\e69c";
+}
+
+.icon-ullist:before {
+  content: "\e694";
+}
+
+.icon-ollist:before {
+  content: "\e695";
+}
