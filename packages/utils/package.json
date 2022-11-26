@@ -1,0 +1,30 @@
+{
+  "name": "@mint-editor/utils",
+  "version": "1.0.0",
+  "description": "MintEditor Utils",
+  "keywords": [
+    "MintEditor",
+    "Utils"
+  ],
+  "author": "0326 <winniringy@gmail.com>",
+  "homepage": "https://github.com/0326/mint-editor#readme",
+  "license": "MIT",
+  "main": "lib/utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0326/mint-editor.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/0326/mint-editor/issues"
+  }
+}
