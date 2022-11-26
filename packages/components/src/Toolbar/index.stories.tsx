@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import CompTwo from '.';
+import { Toolbar } from '.';
 
-storiesOf('CompTwo', module).add('Default', () => <CompTwo />);
+storiesOf('Toolbar', module).add('Default', () => <Toolbar />);

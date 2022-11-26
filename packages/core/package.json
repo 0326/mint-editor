@@ -1,30 +1,47 @@
 {
   "name": "@mint-editor/core",
   "version": "1.0.0",
-  "description": "MintEditor Core",
-  "keywords": [
-    "MintEditor",
-    "Core"
-  ],
-  "author": "0326 <winniringy@gmail.com>",
-  "homepage": "https://github.com/0326/mint-editor#readme",
-  "license": "MIT",
-  "main": "lib/utils.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/0326/mint-editor.git"
-  },
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "react-scripts test",
+    "lint": "eslint ./src/**/*.ts --max-warnings=0 --format=codeframe"
   },
-  "bugs": {
-    "url": "https://github.com/0326/mint-editor/issues"
-  }
+  "dependencies": {
+    "typescript": "~4.9.3"
+  },
+  "devDependencies": {
+    "@react-workspaces/react-scripts": "3.3.0-alpha-08",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "@storybook/react": "^5.2.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.0.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/setupTests.{ts,tsx}",
+      "!src/serviceWorker.{ts,jsx}",
+      "!src/**/*.(spec|test|stories).{ts,tsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 98,
+        "branches": 98,
+        "functions": 98,
+        "lines": 98
+      }
+    }
+  },
+  "license": "MIT"
 }

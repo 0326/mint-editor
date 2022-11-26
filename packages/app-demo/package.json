@@ -4,7 +4,14 @@
   "private": true,
   "homepage": "https://0326.github.io/mint-editor",
   "dependencies": {
-    "@mint-editor/components": "1.0.0",
+    "@mint-editor/components": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typescript": "~4.9.3"
+  },
+  "devDependencies": {
     "@react-workspaces/react-scripts": "^3.3.0-alpha-08",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -12,10 +19,7 @@
     "@types/jest": "^24.0.25",
     "@types/node": "^13.1.6",
     "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "typescript": "~4.9.3"
+    "@types/react-dom": "^16.9.4"
   },
   "scripts": {
     "start": "react-scripts start",

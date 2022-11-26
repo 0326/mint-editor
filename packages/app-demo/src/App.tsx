@@ -1,11 +1,18 @@
 import React from 'react';
-import ReactLogo from './ReactLogo.svg';
+import { MintEditor, Toolbar } from '@mint-editor/components';
+
 import MintEditorLogo from './MintEditorLogo.svg';
+import ReactLogo from './ReactLogo.svg';
 import './App.css';
 
-import { EditBox, Toolbar } from '@mint-editor/components';
 
 const App: React.FC = () => {
+  // const [editor, setEditor] = useState();
+
+  // useEffect(() => {
+  //   setEditor({});
+  // }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -26,7 +33,7 @@ const App: React.FC = () => {
       </header>
       <div className="App-body">
         <Toolbar />
-        <EditBox />
+        <MintEditor />
         <div className="submit-button">发 送</div>
       </div>
     </div>
