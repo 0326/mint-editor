@@ -1,6 +1,6 @@
 {
   "name": "@mint-editor/components",
-  "version": "0.0.3-alpha.0",
+  "version": "0.0.3-alpha.1",
   "main:src": "src/index.tsx",
   "main": "dist/index.tsx",
   "module": "dist/index.esm.js",
@@ -12,7 +12,7 @@
     "lint": "eslint ./src/**/*.tsx --max-warnings=0 --format=codeframe"
   },
   "dependencies": {
-    "@mint-editor/core": "^0.0.3-alpha.0"
+    "@mint-editor/core": "^0.0.3-alpha.1"
   },
   "peerDependencies": {
     "react": "^16.12.0",
