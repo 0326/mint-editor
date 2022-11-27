@@ -1,10 +1,14 @@
 {
   "name": "@mint-editor/components",
   "version": "0.0.3-alpha.0",
-  "main": "src/index.tsx",
   "main:src": "src/index.tsx",
+  "main": "dist/index.tsx",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.umd.min.js",
   "scripts": {
     "test": "react-scripts test",
+    "build": "rollup -c",
     "lint": "eslint ./src/**/*.tsx --max-warnings=0 --format=codeframe"
   },
   "dependencies": {
@@ -12,11 +16,13 @@
   },
   "peerDependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "typescript": "~4.9.3"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@react-workspaces/react-scripts": "^3.3.0-alpha-08",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^9.0.2",
     "@storybook/react": "^5.2.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -26,7 +32,14 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "react-scripts": "^3.3.0",
-    "sass": "^1.56.1"
+    "rollup": "^3.5.0",
+    "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-sass": "^1.12.16",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.56.1",
+    "typescript": "~4.9.3"
   },
   "eslintConfig": {
     "extends": "react-app"

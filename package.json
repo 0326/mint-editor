@@ -7,6 +7,8 @@
     "start:storybook": "yarn workspace @mint-editor/storybook storybook",
     "lint": "lerna run lint",
     "test": "FORCE_COLOR=true lerna run lint && CI=true FORCE_COLOR=true lerna run test -- --coverage",
+    "build:core": "yarn workspace @mint-editor/core run build",
+    "build:comp": "yarn workspace @mint-editor/components run build",
     "deploy": "lerna run deploy",
     "deploy:color": "FORCE_COLOR=true lerna run deploy",
     "version": "lerna version",
