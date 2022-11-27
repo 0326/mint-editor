@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react';
 import { MEditor } from '@mint-editor/core';
-import './index.css';
+import './index.scss';
 
 export const MintEditor: React.FC = () => {
   const [editor, setEditor] = useState<MEditor>();

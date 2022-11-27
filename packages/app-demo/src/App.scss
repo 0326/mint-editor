@@ -1,3 +1,5 @@
+@import '@mint-editor/components/src/_variables.scss';
+
 .App {
   min-height: 100vh;
   background-color: #282c34;
@@ -15,14 +17,17 @@
 
 .App-link {
   font-size: calc(30px + 2vmin);
-  color: #96cdcc;
+  // color: #96cdcc;
+  color: $color_mint;
   font-weight: 100;
+
+  &:hover,
+  &:focus {
+    // color: #a6d6d5;
+    color: $color_mint_active;
+  }
 }
 
-.App-link:hover,
-.App-link:focus {
-  color: #a6d6d5;
-}
 
 .react-logo {
   animation: react-logo-spin infinite 20s linear;
@@ -46,18 +51,19 @@
   float: right;
   border-radius: 10px;
   width: 80px;
-  height: 32px;
-  line-height: 32px;
+  height: 36px;
+  line-height: 28px;
   margin-top: 5px;
   text-align: center;
   color: #fff;
-  background: #71af85;
+  background: $color_mint;
+  border: 3px solid #fff;
   box-sizing: border-box;
   cursor: pointer;
-}
 
-.submit-button:hover {
-  opacity: .9;
+  &:hover {
+    background: $color_mint_active;
+  }
 }
 
 @keyframes react-logo-spin {

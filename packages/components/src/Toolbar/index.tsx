@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import { ToolbarItem } from './type';
+import { PREFIX } from '../_base';
 import { defaultToolbars } from './constant';
-import './index.css';
+import './index.scss';
 
 export interface ToolbarProps {
   toolbars?: ToolbarItem[];
@@ -23,7 +24,7 @@ export const Toolbar = (props: ToolbarProps) => {
   console.log('toolbars', toolbars);
 
   return (
-    <div className="mint-editor-toolbar-container">
+    <div className={`${PREFIX}-toolbar-container`}>
       {toolbars.map((item, index) => {
         const { name, active, disabled, className } = item;
         const statusClass = `${disabled ? 'disabled' : ''} ${active ? 'active' : ''}`;
@@ -33,7 +34,7 @@ export const Toolbar = (props: ToolbarProps) => {
             onClick={() => {
               onClick(index);
             }}
-            className={`mint-editor-toolbar-icon ${className} ${statusClass}`}
+            className={`${PREFIX}-toolbar-icon ${className} ${statusClass}`}
           />
         );
       })}

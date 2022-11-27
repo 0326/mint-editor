@@ -1,0 +1,48 @@
+@import '../variables';
+
+$comp: #{$prefix}-toolbar;
+
+/* https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=3770674 */
+@font-face {
+    font-family: "#{$comp}-icon";
+    /* Project id 3770674 */
+    src: url('//at.alicdn.com/t/c/font_3770674_hnfj8tghr7o.woff2?t=1669464764987') format('woff2'),
+        url('//at.alicdn.com/t/c/font_3770674_hnfj8tghr7o.woff?t=1669464764987') format('woff'),
+        url('//at.alicdn.com/t/c/font_3770674_hnfj8tghr7o.ttf?t=1669464764987') format('truetype');
+}
+
+.icon-bold:before {
+    content: "\e681";
+}
+
+.icon-italic:before {
+    content: "\e682";
+}
+
+.icon-underline:before {
+    content: "\e683";
+}
+
+.icon-strikethrough:before {
+    content: "\eaf0";
+}
+
+.icon-link:before {
+    content: "\e687";
+}
+
+.icon-undo:before {
+    content: "\e69b";
+}
+
+.icon-redo:before {
+    content: "\e69c";
+}
+
+.icon-ullist:before {
+    content: "\e694";
+}
+
+.icon-ollist:before {
+    content: "\e695";
+}

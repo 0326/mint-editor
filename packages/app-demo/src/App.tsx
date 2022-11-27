@@ -3,7 +3,7 @@ import { MintEditor, Toolbar } from '@mint-editor/components';
 
 import MintEditorLogo from './MintEditorLogo.svg';
 import ReactLogo from './ReactLogo.svg';
-import './App.css';
+import './App.scss';
 
 
 const App: React.FC = () => {

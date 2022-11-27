@@ -1,0 +1,38 @@
+@import './base.scss';
+@import '../_variables.scss';
+
+.#{$comp}-container {
+  border: 4px solid $color_mint;
+  border-radius: 10px;
+  padding: 2px 1px;
+  margin-bottom: 4px;
+  background: #fff;
+  color: $color_font;
+  box-sizing: border-box;
+}
+
+.#{$comp}-icon {
+  margin: 0 2px;
+  border-radius: 8px;
+  font-family: "mint-editor-toolbar-icon" !important;
+  font-size: 28px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+
+  &:hover {
+    background: $color_bg_disabled;
+  }
+
+  &.active {
+    /* background: #5da62d; */
+    color: $color_mint;
+  }
+
+  &.disabled {
+    /* background: #bbb; */
+    color: $color_font_disabled;
+    cursor: text;
+  }
+}
