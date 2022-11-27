@@ -1,17 +1,18 @@
-import React from 'react';
-import { MintEditor, Toolbar } from '@mint-editor/components';
-
+import React, { useState } from 'react';
+import { MintEditor } from '@mint-editor/components';
+import { Editor } from '@mint-editor/core';
 import MintEditorLogo from './MintEditorLogo.svg';
 import ReactLogo from './ReactLogo.svg';
 import './App.scss';
 
 
 const App: React.FC = () => {
-  // const [editor, setEditor] = useState();
+  const [editor, setEditor] = useState<Editor>();
 
-  // useEffect(() => {
-  //   setEditor({});
-  // }, []);
+  const sendMessage = () => {
+    const content = editor?.getContent();
+    alert(JSON.stringify(content, null, 2));
+  }
 
   return (
     <div className="App">
@@ -32,9 +33,8 @@ const App: React.FC = () => {
         </h1>
       </header>
       <div className="App-body">
-        <Toolbar />
-        <MintEditor />
-        <div className="submit-button">发 送</div>
+        <MintEditor onInit={(e) => { setEditor(e); }} />
+        <div className="submit-button" onClick={sendMessage}>发 送</div>
       </div>
     </div>
   );

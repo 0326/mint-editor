@@ -1,27 +1,15 @@
 import React from 'react';
-import { useState } from 'react';
 import { ToolbarItem } from './type';
 import { PREFIX } from '../_base';
-import { defaultToolbars } from './constant';
 import './index.scss';
 
 export interface ToolbarProps {
-  toolbars?: ToolbarItem[];
-  onClick?: (item: ToolbarItem) => void;
+  toolbars: ToolbarItem[];
+  onClick: (item: ToolbarItem) => void;
 }
 
-
 export const Toolbar = (props: ToolbarProps) => {
-  const [toolbars, setToolbars] = useState<ToolbarItem[]>(props.toolbars || defaultToolbars);
-
-  const onClick = (index: number) => {
-    const newbars = [...toolbars];
-    newbars[index].active = !newbars[index].active;
-    setToolbars(newbars);
-    props.onClick?.(newbars[index]);
-  };
-
-  console.log('toolbars', toolbars);
+  const { toolbars, onClick } = props;
 
   return (
     <div className={`${PREFIX}-toolbar-container`}>
@@ -31,8 +19,11 @@ export const Toolbar = (props: ToolbarProps) => {
         return (
           <span
             key={name}
+            onMouseDown={(e) => {
+              e.preventDefault(); // 阻止点击失焦默认行为，避免 execCommand 失败
+            }}
             onClick={() => {
-              onClick(index);
+              onClick(item);
             }}
             className={`${PREFIX}-toolbar-icon ${className} ${statusClass}`}
           />
@@ -41,3 +32,6 @@ export const Toolbar = (props: ToolbarProps) => {
     </div>
   );
 }
+
+export * from './type';
+export * from './constant';

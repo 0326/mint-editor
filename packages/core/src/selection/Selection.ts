@@ -1,24 +1,25 @@
 /**
  * 编辑器选取控制类
+ * https://developer.mozilla.org/zh-CN/docs/Web/API/Selection
  * https://developer.mozilla.org/zh-CN/docs/Web/API/Range
  */
 
 export interface SelectionProps {
     container: HTMLElement;
+    onRangeChange?: (r: Range) => void;
 }
 
 export class Selection {
     private range: Range | null;
-    private body: HTMLElement;
+    private props: SelectionProps;
     constructor(props: SelectionProps) {
         this.range = null;
-        this.body = props.container;
+        this.props = props;
         document.addEventListener('selectionchange', this.handleSelectionChange);
     }
 
-    private handleSelectionChange(e) {
+    private handleSelectionChange = () => {
         const selection = window.getSelection();
-
         if (!selection) {
             return;
         }
@@ -30,14 +31,14 @@ export class Selection {
         }
 
         if (
-            !this.body.contains(anchorNode) ||
-            !this.body.contains(focusNode)
+            !this.props.container?.contains(anchorNode) ||
+            !this.props.container?.contains(focusNode)
         ) {
             return;
         }
 
         this.range = selection.getRangeAt(0);
-        console.log('handleSelectionChange', selection, this.range);
+        this.props.onRangeChange?.(this.range);
     }
 
     public setSelection(range?: Range) {
