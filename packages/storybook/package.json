@@ -1,13 +1,15 @@
 {
   "name": "@mint-editor/storybook",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@mint-editor/components": "^0.0.1",
+    "@babel/core": "^7.7.7",
+    "@mint-editor/components": "^0.0.2",
+    "@react-workspaces/react-scripts": "3.3.0-alpha-08",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-docs": "^5.2.8",
     "@storybook/addon-info": "^5.2.8",
@@ -16,10 +18,8 @@
     "@storybook/preset-create-react-app": "^1.5.0",
     "@storybook/react": "^5.2.8",
     "@storybook/theming": "^5.2.8",
-    "@react-workspaces/react-scripts": "3.3.0-alpha-08",
     "babel-loader": "^8.0.6",
-    "cross-env": "6.0.3",
-    "@babel/core": "^7.7.7"
+    "cross-env": "6.0.3"
   },
   "peerDependencies": {
     "react": "^16.12.0",
