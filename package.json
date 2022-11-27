@@ -1,5 +1,6 @@
 {
   "name": "root",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start:app": "yarn workspace @mint-editor/app-demo start",
@@ -7,7 +8,9 @@
     "lint": "lerna run lint",
     "test": "FORCE_COLOR=true lerna run lint && CI=true FORCE_COLOR=true lerna run test -- --coverage",
     "deploy": "lerna run deploy",
-    "deploy:color": "FORCE_COLOR=true lerna run deploy"
+    "deploy:color": "FORCE_COLOR=true lerna run deploy",
+    "version": "lerna version",
+    "publish": "lerna publish from-git"
   },
   "workspaces": {
     "packages": [
