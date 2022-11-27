@@ -1,6 +1,6 @@
 {
   "name": "@mint-editor/components",
-  "version": "0.0.3",
+  "version": "0.0.3-alpha.0",
   "main": "src/index.tsx",
   "main:src": "src/index.tsx",
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "eslint ./src/**/*.tsx --max-warnings=0 --format=codeframe"
   },
   "dependencies": {
-    "@mint-editor/core": "^0.0.3"
+    "@mint-editor/core": "^0.0.3-alpha.0"
   },
   "peerDependencies": {
     "react": "^16.12.0",
