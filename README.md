@@ -42,8 +42,8 @@ yarn workspace my-app add react-router-dom --dev
 # remove `react-router-dom` as `dependencies` in your `packages/my-app/package.json`
 yarn workspace my-app remove react-router-dom --dev
 # executes the specified project scripts command
-yarn workspace @mint-editor/app-demo start
+yarn workspace @mint-editor/app-react start
 # don't use it, homepage is hosted by main branch
-yarn workspace @mint-editor/app-demo deploy
+yarn workspace @mint-editor/app-react deploy
 
 ```

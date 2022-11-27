@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "private": true,
   "scripts": {
-    "start:app": "yarn workspace @mint-editor/app-demo start",
+    "start:app": "yarn workspace @mint-editor/app-react start",
     "start:storybook": "yarn workspace @mint-editor/storybook storybook",
     "lint": "lerna run lint",
     "test": "FORCE_COLOR=true lerna run lint && CI=true FORCE_COLOR=true lerna run test -- --coverage",
@@ -14,14 +14,14 @@
   },
   "workspaces": {
     "packages": [
-      "packages/app-demo",
+      "packages/app-react",
       "packages/core",
       "packages/utils",
       "packages/components",
       "packages/storybook"
     ],
     "nohoist": [
-      "packages/app-demo/webpack-dev-server",
+      "packages/app-react/webpack-dev-server",
       "**/babel-loader",
       "**/babel-jest"
     ]
