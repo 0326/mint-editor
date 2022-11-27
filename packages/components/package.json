@@ -53,5 +53,9 @@
       }
     }
   },
-  "license": "MIT"
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "gitHead": "e9a6bbf541a03f04997b4c9168d7747fdef2bfb6"
 }
