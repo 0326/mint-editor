@@ -1,6 +1,6 @@
 {
   "name": "@mint-editor/storybook",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "storybook": "start-storybook -p 9009",
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.7.7",
-    "@mint-editor/components": "^0.0.2",
+    "@mint-editor/components": "^0.0.3",
     "@react-workspaces/react-scripts": "3.3.0-alpha-08",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-docs": "^5.2.8",
