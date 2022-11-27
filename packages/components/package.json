@@ -8,7 +8,7 @@
     "lint": "eslint ./src/**/*.tsx --max-warnings=0 --format=codeframe"
   },
   "dependencies": {
-    "@mint-editor/core": "1.0.0"
+    "@mint-editor/core": "^0.0.1"
   },
   "peerDependencies": {
     "react": "^16.12.0",
