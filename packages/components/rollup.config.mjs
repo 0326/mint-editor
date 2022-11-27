@@ -57,8 +57,9 @@ export default [
             nodeResolve(),
             commonjs({ exclude: 'node_modules/**' }),
             typescript({ tsconfig: './tsconfig.json', declaration: true, declarationDir: dir }),
-            sass({}),
-            // postcss(),
+            // https://www.npmjs.com/package/rollup-plugin-sass
+            sass({ output: dir + '/index.css' }),
+            // postcss({ plugins: [] }),
             peerDepsExternal(),
         ],
 
