@@ -1,10 +1,10 @@
 {
   "name": "@mint-editor/app-react",
-  "version": "0.0.3-alpha.0",
+  "version": "0.0.3-alpha.1",
   "private": true,
   "homepage": "https://0326.github.io/mint-editor",
   "dependencies": {
-    "@mint-editor/components": "^0.0.3-alpha.0"
+    "@mint-editor/components": "^0.0.3-alpha.1"
   },
   "peerDependencies": {
     "react": "^16.12.0",
