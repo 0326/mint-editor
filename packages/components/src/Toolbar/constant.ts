@@ -33,22 +33,76 @@ export const defaultToolbars: ToolbarItem[] = [
         active: false,
         className: 'icon-strikethrough'
     }, {
+        name: 'ollist',
+        cmd: CommandEnum.OLIST,
+        active: false,
+        disabled: false,
+        className: 'icon-list-ordered'
+    }, {
+        name: 'ullist',
+        cmd: CommandEnum.ULIST,
+        active: false,
+        disabled: false,
+        className: 'icon-list-unordered'
+    }, {
+        name: 'font-format',
+        cmd: CommandEnum.ULIST,
+        active: false,
+        disabled: true,
+        className: 'icon-font-format'
+    }, {
         name: 'link',
         cmd: CommandEnum.LINK,
         active: false,
         disabled: true,
         className: 'icon-link'
     }, {
-        name: 'ollist',
-        cmd: CommandEnum.OLIST,
-        active: false,
-        disabled: false,
-        className: 'icon-ollist'
-    }, {
-        name: 'ullist',
+        name: 'at',
         cmd: CommandEnum.ULIST,
         active: false,
-        disabled: false,
-        className: 'icon-ullist'
+        disabled: true,
+        className: 'icon-at'
+    }, {
+        name: 'emoji',
+        cmd: CommandEnum.ULIST,
+        active: false,
+        disabled: true,
+        className: 'icon-emoji'
+    }, {
+        name: 'align-justify',
+        cmd: CommandEnum.ULIST,
+        active: false,
+        disabled: true,
+        className: 'icon-align-justify'
+    }, {
+        name: 'align-center',
+        cmd: CommandEnum.ULIST,
+        active: false,
+        disabled: true,
+        className: 'icon-align-center'
+    }, {
+        name: 'align-left',
+        cmd: CommandEnum.ULIST,
+        active: false,
+        disabled: true,
+        className: 'icon-align-left'
+    }, {
+        name: 'align-right',
+        cmd: CommandEnum.ULIST,
+        active: false,
+        disabled: true,
+        className: 'icon-align-right'
+    }, {
+        name: 'code-view',
+        cmd: CommandEnum.ULIST,
+        active: false,
+        disabled: true,
+        className: 'icon-code-view'
+    }, {
+        name: 'calendar',
+        cmd: CommandEnum.ULIST,
+        active: false,
+        disabled: true,
+        className: 'icon-calendar'
     },
 ];
